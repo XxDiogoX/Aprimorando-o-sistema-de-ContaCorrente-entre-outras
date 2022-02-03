@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XxDiogoX/Aprimorando-o-sistema-de-ContaCorrente-entre-outras.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/XxDiogoX/Aprimorando-o-sistema-de-ContaCorrente-entre-outras/issues"
+  },
+  "homepage": "https://github.com/XxDiogoX/Aprimorando-o-sistema-de-ContaCorrente-entre-outras#readme"
+}

@@ -1,4 +1,4 @@
-class Cliente{
+export class Cliente{
     get cliente(){
         return this._cliente;
     }
