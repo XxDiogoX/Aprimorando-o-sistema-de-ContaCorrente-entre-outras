@@ -6,4 +6,10 @@ export class ContaPoupanca extends Conta{
         ContaPoupanca.numerosDeConta += 1;
         
     }
+    
+    sacar(valor){
+        var taxa = 2;
+        this._sacar(valor, taxa);
+        
+    }
 }

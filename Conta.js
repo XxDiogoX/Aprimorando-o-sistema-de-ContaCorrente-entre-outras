@@ -1,4 +1,4 @@
-// Classe Abstrada
+// Classe Abstrata
 export class Conta{
     constructor(cliente,agencia,numeroConta,saldoInicial){
         if(this.constructor == Conta){
@@ -37,10 +37,16 @@ export class Conta{
     }
 
     sacar(valor){
-        if(this._saldo >= valor){
-            this._saldo -= valor;
-            console.log(`Sacado o valor: ${valor.toFixed(2)} da conta: ${this._titular}`);
-            
+       var taxa = 1;
+       this._sacar(valor,taxa);
+    }
+
+    _sacar(valor, taxa){
+        const valorSacado = valor + (valor * taxa / 100)
+        if(this._saldo >= valorSacado){
+            this._saldo -= valorSacado;
+            console.log(`Valor Sacado: R$ ${valor.toFixed(2)}\nSaldo: ${this._saldo.toFixed(2)}`);
+
         }else{
             console.log(`Não foi possível sacar R$ ${valor.toFixed(2)}`);
         }
