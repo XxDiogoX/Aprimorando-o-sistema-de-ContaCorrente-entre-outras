@@ -1,5 +1,9 @@
+// Classe Abstrada
 export class Conta{
     constructor(cliente,agencia,numeroConta,saldoInicial){
+        if(this.constructor == Conta){
+            throw new Error("Você não deveria instanciar um objeto do tipo conta diretamente!!");
+        }
         this._cliente = cliente;
         this._titular = cliente._nome;
         this._cpf = cliente._cpf
